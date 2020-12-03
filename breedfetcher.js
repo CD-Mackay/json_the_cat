@@ -1,7 +1,7 @@
 const request = require('request');
 
 const fetchBreedDescription = function(breedName, callback) {
-  let url = 'https://api.therealcatapi.com/v1/breeds/search?q=';
+  let url = 'https://api.thecatapi.com/v1/breeds/search?q=';
   let query = breedName.toLowerCase().slice(0, 3);
   url += query;
   request(url, function(error, response, body) {
